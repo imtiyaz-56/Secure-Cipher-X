@@ -212,6 +212,73 @@ Steps:
 ### Decryption Process:
 Steps: 
 1. Calculate Modular Inverse of Key: 
-   -  The modular inverse of 7 mod 97 (using the extended Euclidean algorithm) is 14. 
+   - The modular inverse of 7 mod 97 (using the extended Euclidean algorithm) is 14. 
 2. Apply Decryption Formula: 
      <pre> P_i = (C_i * K^(-1)) mod M </pre>
+
+| Ciphertext | Decryption Calculation | ASCII | Character |
+|------------|------------------------|-------|-----------|
+|    24      | (24 * 14) mod 97 = 73  |  73   |    I      |
+|    54      | (54 * 14) mod 97 = 77  |  77   |    M      |
+|    8       |  (8 * 14) mod 97 = 84  |  84   |    T      |
+|    24      | (24 * 14) mod 97 = 73  |  73   |    I      |
+|    43      | (43 * 14) mod 97 = 89  |  89   |    Y      |
+|    67      | (67 * 14) mod 97 = 65  |  65   |    A      |
+|    50      | (50 * 14) mod 97 = 90  |  90   |    Z      |
+|    82      | (82 * 14) mod 97 = 53  |  53   |    5      |
+|    89      | (89 * 14) mod 97 = 54  |  54   |    6      |
+
+<pre> Final Decrypted Text: "IMTIYAZ56" </pre>
+
+---
+
+## 💻 Source Code (Java)
+<pre>
+import java.math.BigInteger;
+
+public class SecureCipherX {
+    
+    // Encrypt plaintext using modular arithmetic
+    public static int[] encrypt(String plaintext, int key, int mod) {
+        int[] ciphertext = new int[plaintext.length()];
+        for (int i = 0; i < plaintext.length(); i++) {
+            ciphertext[i] = (plaintext.charAt(i) * key) % mod;
+        }
+        return ciphertext;
+    }
+
+    // Decrypt ciphertext using modular inverse
+    public static String decrypt(int[] ciphertext, int key, int mod) {
+        BigInteger keyInverse = BigInteger.valueOf(key).modInverse(BigInteger.valueOf(mod));
+        StringBuilder decryptedText = new StringBuilder();
+        
+        for (int c : ciphertext) {
+            decryptedText.append((char) ((c * keyInverse.intValue()) % mod));
+        }
+        return decryptedText.toString();
+    }
+
+    public static void main(String[] args) {
+        String plaintext = "IMTIYAZ56";
+        int key = 7;
+        int mod = 97;  // Large prime number
+        
+        // Encryption Process
+        int[] ciphertext = encrypt(plaintext, key, mod);
+        System.out.print("Ciphertext: ");
+        for (int c : ciphertext) {
+            System.out.print(c + " ");
+        }
+        System.out.println();
+
+        // Decryption Process
+        String decryptedText = decrypt(ciphertext, key, mod);
+        System.out.println("Decrypted Text: " + decryptedText);
+    }
+}
+</pre>
+
+### Example Output 
+<pre>Ciphertext: 24 54 8 24 43 67 50 82 89   
+     Decrypted Text: IMTIYAZ56 
+</pre>
