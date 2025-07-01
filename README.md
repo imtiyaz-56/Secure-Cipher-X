@@ -17,7 +17,7 @@
 
 <h2 align="center" style="color:#2980b9;"><strong> Algorithm Name</strong></h2>
 
-<h1 align="center" style="color:#8e44ad;"><strong> Secure-Cipher-X </strong></h1>
+<h1 align="center" style="color:#8e44ad;"><strong> Secure-Cipher-X: A Number Theory-Based Cryptographic Algorithm </strong></h1>
 
 ---
 
@@ -67,21 +67,21 @@
 
 ---
 
-##  Overview
+## 🔒 Overview
 
 Secure-Cipher-X is a novel cryptographic algorithm that leverages number theory and ASCII-based transformations to provide secure encryption and decryption. The algorithm combines modular arithmetic, prime number 
 properties, and ASCII manipulation to ensure robust security while maintaining efficiency. 
 
 ---
 
-##  Introduction
+## 🧠 Introduction
 
 In an era where data security is paramount, cryptographic algorithms play a crucial role in ensuring confidentiality, integrity, and authenticity of digital communications. Secure-Cipher-X is an innovative
 cryptographic algorithm designed for secure and efficient encryption. It leverages number theory, ASCII-based transformations, modular arithmetic, and prime number properties to ensure robust data protection. 
 
 ---
 
-##  Features
+## 📘 Features
 
 -  ASCII-Based Encoding: Converts text into numerical values for encryption. 
 -  Prime-Number Security: Uses large prime numbers for key generation and modular arithmetic. 
@@ -94,7 +94,7 @@ cryptographic algorithm designed for secure and efficient encryption. It leverag
 
 ---
 
-##  Encryption Process
+## 🔐 Encryption Process
 
 1. Convert each character of the plaintext into its ASCII equivalent. 
 2. Apply a transformation using modular arithmetic: 
@@ -108,7 +108,7 @@ cryptographic algorithm designed for secure and efficient encryption. It leverag
   
 ---
 
-##  Decryption Process
+## 🔓 Decryption Process
 
 1. Apply the inverse transformation: 
    <pre>  P_i = (C_i * K^(-1)) mod M </pre>
@@ -279,7 +279,7 @@ public class SecureCipherX {
 }
 </pre>
 
-### Example Output 
+###  Example Output 
 
 <pre>Ciphertext: 24 54 8 24 43 67 50 82 89   
 Decrypted Text: "IMTIYAZ56" 
