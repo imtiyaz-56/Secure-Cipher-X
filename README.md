@@ -160,3 +160,21 @@ iii. For each character index i in ciphertext (0 to length -1):
   v. Return the original plaintext 
 
 </pre>
+
+---
+
+##  Flowchart for Encryption Algorithm
+<p align="center">
+<img src="./Encryption Flowchart.png" alt="Encryption Flowchart">
+</p>
+
+---
+
+##  Flowchart for Decryption Algorithm
+<p align="center">
+<img src="./Decryption Flowchart.png" alt="Encryption Flowchart">
+</p>
+
+
+
+---
