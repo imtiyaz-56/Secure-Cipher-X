@@ -191,18 +191,27 @@ Steps:
 <pre> "IMTIYAZ56" → [73, 77, 84, 73, 89, 65, 90, 53, 54] </pre>
 2. Apply Modular Arithmetic:
 
-     Each character is encrypted using : C_i = (P_i * K) mod M 
+     Each character is encrypted using : <pre> C_i = (P_i * K) mod M </pre>
 
 | Character | ASCII | Ciphertext Calculation | Ciphertext |
 |-----------|-------|------------------------|------------|
-| I         | 73    | (73 * 7) mod 97 = 24   | 24         |
-| M         | 77    | (77 * 7) mod 97 = 54   | 54         |
-| T         | 84    | (84 * 7) mod 97 = 8    | 8          |
-| I         | 73    | (73 * 7) mod 97 = 24   | 24         |
-| Y         | 89    | (89 * 7) mod 97 = 43   | 43         |
-| A         | 65    | (65 * 7) mod 97 = 67   | 67         |
-| Z         | 90    | (90 * 7) mod 97 = 50   | 50         |
-| 5         | 53    | (53 * 7) mod 97 = 82   | 82         |
-| 6         | 54    | (54 * 7) mod 97 = 89   | 89         |
+|    I      |  73   | (73 * 7) mod 97 = 24   |    24      |
+|    M      |  77   | (77 * 7) mod 97 = 54   |    54      |
+|    T      |  84   | (84 * 7) mod 97 = 8    |    8       |
+|    I      |  73   | (73 * 7) mod 97 = 24   |    24      |
+|    Y      |  89   | (89 * 7) mod 97 = 43   |    43      |
+|    A      |  65   | (65 * 7) mod 97 = 67   |    67      |
+|    Z      |  90   | (90 * 7) mod 97 = 50   |    50      |
+|    5      |  53   | (53 * 7) mod 97 = 82   |    82      |
+|    6      |  54   | (54 * 7) mod 97 = 89   |    89      |
 
 <pre> Final Ciphertext: [24, 54, 8, 24, 43, 67, 50, 82, 89] </pre>
+
+---
+
+### Decryption Process:
+Steps: 
+1. Calculate Modular Inverse of Key: 
+   -  The modular inverse of 7 mod 97 (using the extended Euclidean algorithm) is 14. 
+2. Apply Decryption Formula: 
+     <pre> P_i = (C_i * K^(-1)) mod M </pre>
