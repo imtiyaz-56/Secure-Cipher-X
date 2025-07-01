@@ -178,3 +178,16 @@ iii. For each character index i in ciphertext (0 to length -1):
 
 
 ---
+
+##  Examples with Test Case 
+### ENCRYPTION PROCESS:
+  Given: 
+   - Plaintext: "IMTIYAZ56" 
+   - Key: 7 
+   - Modulus (M): 97 
+  
+Steps: 
+1. Convert Characters to ASCII: 
+     "IMTIYAZ56" → [73, 77, 84, 73, 89, 65, 90, 53, 54] 
+2. Apply Modular Arithmetic: 
+     Each character is encrypted using : C_i = (P_i * K) mod M 
