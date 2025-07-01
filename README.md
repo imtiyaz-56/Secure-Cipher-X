@@ -48,3 +48,29 @@
 
 
 ---
+##  Table of Contents
+
+- [Overview](#-overview)
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Encryption Process](#-encryption-process)
+- [Decryption Process](#-decryption-process)
+- [Encryption Algorithm](#-encryption-algorithm)
+- [Decryption Algorithm](#-decryption-algorithm)
+- [Flowcharts](#-flowchart)
+- [Test Case](#-test-case)
+- [Source Code](#-source-code)
+- [Benefits](#-benefits)
+- [Conclusion](#-conclusion)
+- [Security Notes](#-security-notes)
+- [Future Improvements](#-future-improvements)
+
+---
+
+##  Overview
+
+Secure-Cipher-X is a novel cryptographic algorithm that leverages 
+number theory and ASCII-based transformations to provide secure encryption and 
+decryption. The algorithm combines modular arithmetic, prime number 
+properties, and ASCII manipulation to ensure robust security while maintaining 
+efficiency. 
