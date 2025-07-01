@@ -98,7 +98,7 @@ cryptographic algorithm designed for secure and efficient encryption. It leverag
 
 1. Convert each character of the plaintext into its ASCII equivalent. 
 2. Apply a transformation using modular arithmetic: 
-     C_i = (P_i * K) mod M 
+   <pre>  C_i = (P_i * K) mod M </pre>
        where: 
      - C_i is the ciphertext character. 
      - P_i is the plaintext character. 
@@ -110,7 +110,7 @@ cryptographic algorithm designed for secure and efficient encryption. It leverag
 ##  Decryption Process
 
 1. Apply the inverse transformation: 
-     P_i = (C_i * K^(-1)) mod M 
+   <pre>  P_i = (C_i * K^(-1)) mod M </pre>
      - Using modular inverse of K.
 
 ---
