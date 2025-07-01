@@ -24,7 +24,7 @@
 <h2 align="center" style="color:#16a085;"><strong> Submitted By</strong></h2>
 
 <p align="center">
-  <strong>Name:</strong>Shekh Imtiyaz  
+  <strong>Name: SHEKH IMTIYAZ </strong> 
   <br>
   <strong>Student ID:</strong> 2102063  
   <br>
