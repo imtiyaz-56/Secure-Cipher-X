@@ -116,7 +116,7 @@ cryptographic algorithm designed for secure and efficient encryption. It leverag
 ---
 
 ##  Encryption Algorithm
-
+<pre>
 Input: 
   - plaintext (string) 
   - key (string)
@@ -135,10 +135,11 @@ iii. For each character index i in plaintext (0 to length -1):
  iv. Join cipher list into a single string 
   v. Return the final ciphertext 
 
+</pre>
 ---
 
 ##  Decryption Algorithm
-
+<pre>
 Input: 
   - ciphertext (string) 
   - key (string) 
@@ -156,3 +157,5 @@ iii. For each character index i in ciphertext (0 to length -1):
          c. Convert decrypted_char back to character and append to plaintext list 
  iv. Join plaintext list into a single string 
   v. Return the original plaintext 
+
+</pre>
