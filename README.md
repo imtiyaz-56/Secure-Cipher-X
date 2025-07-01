@@ -233,6 +233,7 @@ Steps:
 ---
 
 ## 💻 Source Code (Java)
+
 <pre>
 import java.math.BigInteger;
 
@@ -279,6 +280,39 @@ public class SecureCipherX {
 </pre>
 
 ### Example Output 
+
 <pre>Ciphertext: 24 54 8 24 43 67 50 82 89   
-     Decrypted Text: IMTIYAZ56 
+Decrypted Text: "IMTIYAZ56" 
 </pre>
+
+---
+
+##  Benefits
+
+-  Strong encryption security. 
+-  Uses mathematical principles, making brute-force attacks difficult. 
+-  Works efficiently even with large data.
+
+---
+
+##  Conclusion
+
+Secure-Cipher-X presents a robust, efficient, and lightweight encryption method, leveraging modular arithmetic, prime-based security, and ASCII transformations to ensure confidentiality and integrity in digital 
+communications. Secure-Cipher-X is optimized for performance, making it suitable for IoT, embedded systems, and low-power environments. By incorporating dynamic key scheduling, attack resistance, and SPN 
+structures, it provides strong encryption security while remaining easy to implement. 
+
+---
+
+##  Security Notes
+
+-  Choosing a large prime modulus strengthens security. 
+-  Implement error handling for key selection. 
+-  Ensure secure key exchange mechanisms.
+
+---
+
+##  Future Improvements 
+
+-  Extend to asymmetric encryption models. 
+-  Optimize computational efficiency. 
+-  Introduce hybrid encryption combining multiple number theory principles.
