@@ -24,7 +24,7 @@
 <h2 align="center" style="color:#16a085;"><strong> Submitted By</strong></h2>
 
 <p align="center">
-  <strong>Name:</strong> Shekh Imtiyaz  
+  <strong>Name:</strong>Shekh Imtiyaz  
   <br>
   <strong>Student ID:</strong> 2102063  
   <br>
@@ -282,7 +282,7 @@ public class SecureCipherX {
 ###  Example Output 
 
 <pre>Ciphertext: 24 54 8 24 43 67 50 82 89   
-Decrypted Text: "IMTIYAZ56" 
+Decrypted Text: IMTIYAZ56
 </pre>
 
 ---
